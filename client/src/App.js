@@ -4,7 +4,7 @@ import axios from "axios";
 
 import "./App.css";
 import Form from "./components/Form";
-import UserList from "./components/UsersList";
+import UserList from "./components/UserList";
 
 const BASE_URL = "https://crud-production-ad03.up.railway.app";
 
