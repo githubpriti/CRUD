@@ -6,7 +6,7 @@ import "./App.css";
 import Form from "./components/Form";
 import UsersList from "./components/UsersList";
 
-const BASE_URL = "crud-production-ad03.up.railway.app";
+const BASE_URL = "https://crud-production-ad03.up.railway.app";
 
 
 function App() {
