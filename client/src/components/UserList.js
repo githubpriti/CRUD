@@ -1,7 +1,7 @@
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const UsersList = ({ userData, fetchUsersData, BASE_URL }) => {
+const UserList = ({ userData, fetchUsersData, BASE_URL }) => {
   const handleEdit = async (user) => {
     try {
       const userName = prompt("Enter new name");
@@ -96,4 +96,4 @@ const UsersList = ({ userData, fetchUsersData, BASE_URL }) => {
   );
 };
 
-export default UsersList;
+export default UserList;
