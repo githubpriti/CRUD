@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-export const Form = ({fetchUsersData, BASE_URL}) => {
+const Form = ({fetchUsersData, BASE_URL}) => {
   // To Store the value from Frontend
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
@@ -99,3 +99,5 @@ export const Form = ({fetchUsersData, BASE_URL}) => {
     </div>
   );
 };
+
+export default Form;
