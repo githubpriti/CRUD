@@ -8,11 +8,10 @@ import UserList from "./components/UserList";
 
 const BASE_URL = "https://crud-production-ad03.up.railway.app";
 
-
 function App() {
   const [userData, setUserData] = useState(null);
   const fetchUsersData = async () => {
-    const resp = await axios.get(`${BASE_URL}/getUsers`);
+    const resp = await axios.get(`${BASE_URL}/getUser`);
 
     setUserData(resp.data.users);
   };

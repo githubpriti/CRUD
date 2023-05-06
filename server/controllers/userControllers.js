@@ -7,6 +7,7 @@ exports.home = (req, res) => {
 
 exports.createUser = async (req, res) => {
   try {
+    //Extracting name nd email from body
     const { name, email } = req.body;
     // To check all the details
     if (!name || !email) {
@@ -20,7 +21,7 @@ exports.createUser = async (req, res) => {
     
     // Inserting into the Database
 
-    const user = await User.create({ name, email });
+    const user = await User.create({ name, email, });
     res.status(201).json({
       success: true,
       message: "User Created Successfully",
@@ -69,7 +70,10 @@ exports.editUser = async (req, res) => {
 
 exports.deleteUser = async (req, res) => {
   try {
-    const user = await User.findByIdAndDelete(req.params.id); //we dont need req.body i.e. everything from body to delete
+    const userId = req.params.id;
+
+    const user = await User.findByIdAndDelete(userId);
+    
     res.status(200).json({
       success: true,
       message: "User Deleted Successfully",

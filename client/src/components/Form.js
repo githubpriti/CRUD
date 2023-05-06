@@ -14,6 +14,7 @@ const Form = ({fetchUsersData, BASE_URL}) => {
       name: userName,
       email: userEmail,
     };
+    
     const res = await axios.post(`${BASE_URL}/createUser`, data);   //axios will send data from backend to frontend (mediator)
     
     if (res.data.success) {
