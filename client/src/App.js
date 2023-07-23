@@ -11,7 +11,7 @@ const BASE_URL = "https://crud-production-ad03.up.railway.app";
 function App() {
   const [userData, setUserData] = useState(null);
   const fetchUsersData = async () => {
-    const resp = await axios.get(`${BASE_URL}/getUser`);
+    const resp = await axios.get(`${BASE_URL}/getUsers`);
 
     setUserData(resp.data.users);
   };

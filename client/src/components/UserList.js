@@ -1,7 +1,9 @@
+// import React, { useState, useEffect } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 
 const UserList = ({ userData, fetchUsersData, BASE_URL }) => {
+
   const handleEdit = async (user) => {
     try {
       const userName = prompt("Enter new name");

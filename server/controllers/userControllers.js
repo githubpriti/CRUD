@@ -1,8 +1,8 @@
 // LOGIC, BUSINESS LOGIC
 const User = require("../model/userModel");
 
-exports.home = (req, res) => {
-    res.send("Hello from backend");
+exports.home = (req, res) =>{
+    res.send("Hello from  backend");
 };
 
 exports.createUser = async (req, res) => {
@@ -20,8 +20,8 @@ exports.createUser = async (req, res) => {
     }
     
     // Inserting into the Database
-
-    const user = await User.create({ name, email, });
+    
+    const user = await User.create({ name, email});
     res.status(201).json({
       success: true,
       message: "User Created Successfully",
